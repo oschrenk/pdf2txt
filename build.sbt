@@ -8,6 +8,7 @@ libraryDependencies ++= Seq(
   "com.github.scopt" %% "scopt" % "3.7.0",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2",
   "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "org.apache.pdfbox" % "pdfbox" % "2.0.7",
   "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 )
 

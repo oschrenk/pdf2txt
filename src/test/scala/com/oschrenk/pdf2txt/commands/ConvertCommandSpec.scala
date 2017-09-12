@@ -7,7 +7,8 @@ import org.scalatest._
 class ConvertCommandSpec extends FlatSpec with Matchers {
 
   "ConvertCommand" should "return foo" in {
-    val text = new ConvertCommand(new File("test")).run()
-    text shouldBe "foo"
+    val pdfFile = new File(getClass.getResource("/foo.pdf").getPath())
+    val text = new ConvertCommand(pdfFile).run()
+    text shouldBe "foo\n"
   }
 }
