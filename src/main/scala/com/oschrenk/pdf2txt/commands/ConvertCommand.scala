@@ -10,7 +10,9 @@ class ConvertCommand(pdf: File) extends LazyLogging  {
   def run(): String = {
     logger.info(s"Converting $pdf")
     val doc = PDDocument.load(pdf)
-    new PDFTextStripper().getText(doc)
+    val text = new PDFTextStripper().getText(doc)
+    doc.close()
+    text
   }
 }
 
