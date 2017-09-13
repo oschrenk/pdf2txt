@@ -11,6 +11,7 @@ sbt assembly
 ## Usage
 
 ```
-pdf2txt path.pdf
+pdf2txt convert path.pdf
+pdf2txt convert path.pdf > out.txt
 ```
 
