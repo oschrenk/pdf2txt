@@ -11,7 +11,7 @@ object Pdf2Txt extends App {
       options.command match {
         case None => println("Noop")
         case Some(ConvertCliCommand(input)) =>
-          new ConvertCommand(input).run()
+          println(new ConvertCommand(input).run().trim())
       }
     case None =>
       println("error parsing")
